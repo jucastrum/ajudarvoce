@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   gap: 70px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Text', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: white;
@@ -81,7 +81,8 @@
 }
 
 .menuButton:hover {
-  font-weight: 600;
+  font-weight: 500;
+  color: #2CBEFF;
 }
 
 .rightSpace {

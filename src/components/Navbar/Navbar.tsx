@@ -16,6 +16,14 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Função para rolar até a seção desejada
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.logo}>
@@ -36,9 +44,20 @@ export function Navbar() {
       </div>
 
       <ul className={`${styles.menu} ${mobileMenuOpen ? styles.open : ""}`}>
-        {["Quem somos", "Serviços", "Como você está se sentindo?", "Locais", "Contato"].map((item, index) => (
+        {/* Mapeando itens do menu */}
+        {[
+          { name: "Quem somos", id: "quemsomos" },
+          { name: "Serviços", id: "servicos" },
+          { name: "Como você está se sentindo?", id: "comovocestasesentindo" },
+          { name: "Locais", id: "locais" }
+        ].map((item, index) => (
           <li key={index}>
-            <button className={styles.menuButton}>{item}</button>
+            <button
+              className={styles.menuButton}
+              onClick={() => scrollToSection(item.id)} // Chama a função para rolar até a seção
+            >
+              {item.name}
+            </button>
           </li>
         ))}
       </ul>

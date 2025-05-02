@@ -107,7 +107,7 @@ const Locations: React.FC = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section id="locais" className={`${styles.container} scroll-mt-10`}>
       <div className={styles.titleArea}>
         <div className={styles.Title}>Busque ajuda nestes locais:</div>
         <div className={styles.Subtitle}>*Por favor, nos contate para adicionarmos mais locais.</div>

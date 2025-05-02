@@ -1,5 +1,3 @@
-/* globals.css */
-
 @import "tailwindcss";
 
 @font-face {
@@ -99,9 +97,6 @@
   src: url('/Fonts/BREATHING PERSONAL USE ONLY.ttf');
 }
 
-* {
-  font-family: 'SF Pro Text', sans-serif; /* Aplique a fonte padrão globalmente */
-}
 
 
 @theme inline {
@@ -110,7 +105,7 @@
 }
 
 :root {
-  --font-sans: 'SF Pro Text', 'SF UI Display', sans-serif;
+  --font-sans: 'SF Pro Text', 'SF Pro Display', sans-serif;
   --font-cursive: 'Breathing Personal Use Only', cursive;
   --radius: 0.625rem;
   --background: oklch(1 0 0);

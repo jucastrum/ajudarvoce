@@ -4,7 +4,7 @@ import "./globals.css";  // Garantir que o globals.css seja importado
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="scroll-smooth">
       <Head>
         <title>AjudarVocê - Ajuda em saúde mental</title>
         <meta name="description" content="O AjudarVocê conecta pessoas de Manaus a apoio psicológico gratuito." />

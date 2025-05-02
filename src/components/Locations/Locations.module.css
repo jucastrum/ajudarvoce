@@ -4,13 +4,14 @@
   }
   
   .titleArea {
+    font-family: 'SF Pro Text', sans-serif;
     text-align: center;
     margin-bottom: 5rem;
   }
 
   .Title {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: #2CBEFF;
   }
   
@@ -81,6 +82,8 @@
   .locationManaus {
     font-size: 16px;
     color: #2CBEFF;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 500;
   }
   
   .searchIconWrapper {
@@ -156,7 +159,7 @@
   .infoContainerTitleSubtitle {
     display: flex; /* Flex para que o gap entre título e subtítulo funcione */
     flex-direction: column; /* Coloca título e subtítulo um abaixo do outro */
-    font-family: 'SF UI Display', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 500;
     gap: 0; /* Adiciona espaçamento entre o título e o subtítulo */
     align-items: flex-start;
@@ -179,7 +182,7 @@
   .locationDescription {
     margin-top: auto;
     font-size: 16px;
-    font-family: 'SF UI Display', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 300;
     line-height: 1.5rem;
     text-align: start;
@@ -224,7 +227,7 @@
   .whatsappButton,
   .mapButton,
   .mapButtonClosed {
-    font-family: 'SF UI Display', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: 500;
     color: white;
     border: none;

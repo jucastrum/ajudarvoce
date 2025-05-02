@@ -6,8 +6,7 @@ import styles from './About.module.css';
 
 const About: NextPage = () => {
   return (
-    <section className={styles.container}>
-      
+    <section id="quemsomos" className={`${styles.container} scroll-mt-[100rem]`}>
       {/* Elementos visuais de fundo */}
       <div className={styles.visuals}>
         <Image
