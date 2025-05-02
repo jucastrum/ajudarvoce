@@ -22,14 +22,14 @@
 }
 
 .titulo {
-  font-family: var(--font-sfProText);
-  font-size: 32px;
+  font-family: "SF Pro Text";
+  font-size: 30px;
   font-weight: 50;
   line-height: 54px;
 }
 
 .subtitulo {
-  font-family: var(--font-sfProText);
+  font-family: "Breathing Personal Use Only";
   font-size: 96px;
   line-height: 80px;
 }
