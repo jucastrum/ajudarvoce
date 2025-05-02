@@ -1,0 +1,98 @@
+.container {
+    background: linear-gradient(90deg, #A5E3FF 0%, #44B5E9 100%);
+    padding: 60px 100px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10rem;
+  }
+  
+  .title {
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3D3D3D;
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-family: 'SF UI Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    width: 100%;
+    color: #3D3D3D;
+    margin-bottom: 2rem;
+  }
+  .discList {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* espaçamento para as bolinhas aparecerem */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .discList li {
+    margin-bottom: 0.5rem; /* espaço entre os itens */
+    line-height: 1.6;
+  }
+  
+@media (max-width: 1030px) {
+  .container {
+    gap: 15px;
+  }
+
+  .title {
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3D3D3D;
+    margin-bottom: 0;
+  }
+  
+  .subtitle {
+    font-family: 'SF UI Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #3D3D3D;
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 60px 25px;
+    border-radius: 35px;
+    gap: 15px;
+    margin-bottom: 10rem;
+  }
+  
+  .title {
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #3D3D3D;
+  }
+  
+  .subtitle {
+    font-family: 'SF UI Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #3D3D3D;
+    margin-bottom: 1.5rem;
+  }
+  .discList {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* espaçamento para as bolinhas aparecerem */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .discList li {
+    margin-bottom: 0.5rem; /* espaço entre os itens */
+    line-height: 1.6;
+  }
+}

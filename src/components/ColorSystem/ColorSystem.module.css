@@ -1,0 +1,35 @@
+.container {
+    padding: 60px 100px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20rem;
+}
+
+.discList {
+  list-style-type: disc;
+  padding-left: 1.5rem; /* espaçamento para as bolinhas aparecerem */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.discList li {
+  margin-bottom: 0.5rem; /* espaço entre os itens */
+  line-height: 1.6;
+}
+
+@media (max-width: 1030px) {
+    .container {
+      gap: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 25px;
+    border-radius: 35px;
+    gap: 15px;
+  }
+}

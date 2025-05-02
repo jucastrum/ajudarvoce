@@ -1,0 +1,734 @@
+.container {
+    padding: 2rem 100px;
+    margin-bottom: 10rem;
+  }
+  
+  .titleArea {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .Title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2CBEFF;
+  }
+  
+  .Subtitle {
+    font-size: 16px;
+    color: #4d4d4d;
+  }
+
+  
+  .bannerLocations {
+    background: radial-gradient(ellipse 113.45% 161.39% at 40.95% -10.45%, white 33%, #F8FDFF 98%);
+    box-shadow: 3px 9px 21px rgba(0, 0, 0, 0.06);
+    border-radius: 28px;
+    padding: 5rem 3rem;
+    border: 2px solid #C5ECFF;
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 100%;
+  }
+  
+  .searchBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    gap: 1rem; /* Espaço entre os elementos */
+  }
+  
+  .searchInputWrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #C5ECFF;
+    padding: 0 0.5rem;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0px 1px 12px #BAE8FF; /* Adicionando box-shadow para dar efeito de profundidade */
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    font-size: 18px;
+    color: #2CBEFF;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+  }
+  
+  .noResultsMessage p {
+    font-size: 18px; /* Espaçamento inferior */
+    margin-bottom: 25px;
+  }
+  
+
+  .pointerContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .pointerIcon {
+    width: 25px;
+    height: 28px;
+  }
+  
+  .locationManaus {
+    font-size: 16px;
+    color: #2CBEFF;
+  }
+  
+  .searchIconWrapper {
+    background-color: #2CBEFF;
+    border-radius: 50%;
+    padding: 12px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchIconWrapper img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .style {
+    padding-left: 20rem;
+  }
+
+  .locationsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20rem;
+    gap: 3rem;
+  }
+  
+
+  .locationCard {
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+      "imageContainer infoContainer"
+      "mapContainer mapContainer";
+    grid-template-columns: 1fr 1fr; /* A imagem e as infos continuam lado a lado */
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+  }
+  
+  .imageContainer {
+    grid-area: imageContainer;
+    width: 423px;
+    height: 323px;
+    border-radius: 20px;  /* Definindo o border-radius do container */
+    border: 2px solid #C5ECFF;  
+    object-fit: cover;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .imageContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;  /* Removendo o border-radius da imagem, pois o container já tem */
+    object-fit: cover;
+    display: block;
+  }
+  
+/* Info Container */
+.infoContainer {
+    grid-area: infoContainer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacamento entre as seções dentro do container */
+  }
+  
+  /* Container que engloba o título e o subtítulo */
+  .infoContainerTitleSubtitle {
+    display: flex; /* Flex para que o gap entre título e subtítulo funcione */
+    flex-direction: column; /* Coloca título e subtítulo um abaixo do outro */
+    font-family: 'SF UI Display', sans-serif;
+    font-weight: 500;
+    gap: 0; /* Adiciona espaçamento entre o título e o subtítulo */
+    align-items: flex-start;
+  }
+  
+  /* Título */
+  .locationTitle {
+    color: #2CBEFF;
+    text-align: start;
+    font-size: 28px;
+  }
+  
+  /* Subtítulo */
+  .locationSubtitle {
+    font-size: 28px;
+    color: #2CBEFF;
+    text-align: start;
+  }
+
+  .locationDescription {
+    margin-top: auto;
+    font-size: 16px;
+    font-family: 'SF UI Display', sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: start;
+  }
+  
+  /* Novo container para o mapa, que fica abaixo da imagem e informações */
+  .mapContainer {
+    grid-area: mapContainer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; /* Espaço entre o conteúdo do card e o mapa */
+    margin-bottom: 1rem; /* Espaço após o mapa */
+    position: relative;
+  }
+  
+  .mapArea {
+    width: 100%;  /* Largura do mapa */
+    height: 300px; /* Altura do mapa */
+    background-color: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .mapArea iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+  }
+  
+/* Botões */
+.buttonsArea {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 5px;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+  
+  .phoneButton,
+  .whatsappButton,
+  .mapButton,
+  .mapButtonClosed {
+    font-family: 'SF UI Display', sans-serif;
+    font-weight: 500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border-bottom: 1.65px solid #0179B4;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto */
+  }
+  
+  .phoneButton {
+    background-color: #00A4F4;
+  }
+  
+  .whatsappButton {
+    background-color: #25D366;
+  }
+  
+  .mapButton {
+    background-color: #0069AB;
+  }
+
+  .mapButtonClosed {
+    background-color: #DC3232; /* Cor vermelha para o botão Fechar mapa */
+  }
+  
+  /* Adicionando estilo para os ícones dentro dos botões */
+  .buttonIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+  }
+
+  
+  
+@media (max-width: 2570px) { 
+    .locationCard {
+        padding: 3rem 3rem;
+    }
+
+
+    .mapArea {
+        width: 100%;  /* Largura do mapa */
+        height: 400px; /* Altura do mapa */
+        background-color: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }  
+}
+
+@media (max-width: 1920px) { 
+    .locationCard {
+        margin: auto;
+        padding: 3rem 6rem;
+        gap: 1rem;
+    }
+
+    .mapArea {
+        width: 100%;  /* Largura do mapa */
+        height: 300px; /* Altura do mapa */
+        background-color: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }  
+
+      .locationTitle {
+        font-size: 28px;
+      }
+      
+      /* Subtítulo */
+      .locationSubtitle {
+        font-size: 28px;
+
+      }
+    
+      .locationDescription{
+        margin-top: auto;
+        font-size: 18px;
+      }
+}
+
+@media (max-width: 1450px) { 
+    .locationCard {
+        padding: 3rem 4.2rem;
+    }
+
+    .mapArea {
+        width: 100%;  /* Largura do mapa */
+        height: 300px; /* Altura do mapa */
+        background-color: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }  
+
+    .buttonsArea {
+        gap: 1rem;
+      }
+
+    .phoneButton,
+    .whatsappButton,
+    .mapButton,
+    .mapButtonClosed {
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+  }
+
+    .buttonIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+}
+
+@media (max-width: 1370px) { 
+    .container {
+        padding: 2rem 100px;
+      }
+
+    .searchInputWrapper {
+        width: 100%;
+        max-width: 550px;
+      }
+
+
+    .locationCard {
+        padding: 3rem 2rem;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .mapArea {
+        width: 100%;  /* Largura do mapa */
+        height: 300px; /* Altura do mapa */
+        background-color: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }  
+
+    .buttonsArea {
+    gap: 0.8rem;
+  }
+    .phoneButton,
+    .whatsappButton,
+    .mapButton,
+    .mapButtonClosed {
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+  }
+
+    .buttonIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+}
+
+
+@media (max-width: 1030px) { 
+    .container {
+        padding: 2rem 60px;
+      }
+
+    .searchInputWrapper {
+        width: 100%;
+        max-width: 550px;
+      }
+
+    .bannerLocations{
+      padding: 5rem 2rem;
+    }
+
+    .locationCard {
+        padding: 2rem 2rem;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .locationDescription {
+      margin-top: auto;
+      font-size: 16px;
+    }
+
+    .mapArea {
+        width: 100%;  /* Largura do mapa */
+        height: 300px; /* Altura do mapa */
+        background-color: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }  
+
+    .buttonsArea {
+    gap: 0.8rem;
+  }
+    .phoneButton,
+    .whatsappButton,
+    .mapButton,
+    .mapButtonClosed {
+        color: white;
+        border: none;
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 12px;
+  }
+
+    .buttonIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+}
+
+@media (max-width: 920px) { 
+  .container {
+    padding: 2rem 60px;
+  }
+
+  .searchInputWrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+  .searchBanner{
+    margin-bottom: 1.5rem;
+  }
+  .bannerLocations {
+    padding: 3rem 2rem;
+  }
+
+  .locationCard {
+    padding: 2rem 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "imageContainer"
+      "infoContainer"
+      "mapContainer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+    border-radius: 20px;
+  }
+
+  .locationsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20rem;
+    gap: 3rem;
+  }
+
+  .locationDescription {
+    margin-top: auto;
+    font-size: 16px;
+  }
+
+  .imageContainer {
+    grid-area: imageContainer;
+    width: 423px;
+    height: 323px;
+    border-radius: 20px;
+    border: 2px solid #C5ECFF;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .infoContainer {
+    grid-area: infoContainer;
+    /* Adicione aqui os estilos do bloco de informações se necessário */
+  }
+
+  .mapArea {
+    grid-area: mapContainer;
+    width: 100%;
+    height: 300px;
+    background-color: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }  
+
+  .buttonsArea {
+    gap: 1rem;
+  }
+
+  .phoneButton,
+  .whatsappButton,
+  .mapButton,
+  .mapButtonClosed {
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .buttonIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 480px) { 
+  .container {
+    padding: 2rem 25px;
+  }
+
+  .titleArea {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .Title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2CBEFF;
+  }
+  
+  .Subtitle {
+    font-size: 14px;
+    color: #4d4d4d;
+  }
+
+  .searchInputWrapper {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .searchInput{
+    font-size: 15px;
+  }
+
+  .searchIconWrapper{
+    padding: 10px 11px;
+  }
+  .searchBanner{
+    margin-bottom: 1.5rem;
+  }
+
+  .pointerContainer {
+    display: none;
+  }
+
+  .bannerLocations {
+    padding: 3rem 1rem;
+  }
+
+  .locationCard {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "imageContainer"
+      "infoContainer"
+      "mapContainer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    border-radius: 20px;
+  }
+
+  .locationsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+  /* Título */
+  .locationTitle {
+    color: #2CBEFF;
+    text-align: start;
+    font-size: 18px;
+  }
+  
+  /* Subtítulo */
+  .locationSubtitle {
+    font-size: 18px;
+    color: #2CBEFF;
+    text-align: start;
+  }
+  
+  .locationDescription {
+    margin-top: auto;
+    font-size: 16px;
+  }
+
+  .imageContainer {
+    grid-area: imageContainer;
+    width: 355px;
+    height: 280px;
+    border-radius: 15px;
+    border: 2px solid #C5ECFF;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .infoContainer {
+    grid-area: infoContainer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacamento entre as seções dentro do container */
+  }
+
+  .mapArea {
+    grid-area: mapContainer;
+    width: 100%;
+    height: 300px;
+    background-color: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }  
+
+  .buttonsArea {
+    gap: 0.8rem;
+  }
+
+  .phoneButton,
+  .whatsappButton,
+  .mapButton,
+  .mapButtonClosed {
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .buttonIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 415px) { 
+  .container {
+    padding: 1.5rem 25px;
+  }
+
+  .searchInput{
+    font-size: 15px;
+  }
+
+  .searchIconWrapper{
+    padding: 10px 12px;
+  }
+
+  .bannerLocations{
+    padding: 2.5rem 1rem;
+  }
+
+  .locationCard {
+    padding: 1rem 0;
+  }
+
+  .imageContainer {
+    grid-area: imageContainer;
+    width: 325px;
+    height: 260px;
+  }
+}

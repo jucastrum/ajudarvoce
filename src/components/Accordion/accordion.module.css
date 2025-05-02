@@ -1,0 +1,234 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item {
+    border-radius: 28px;
+    border-bottom: 1px solid #0179B4;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  /* Botão de título */
+  .header {
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Texto do título */
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2CBEFF;
+    font-family: 'SF Pro Text', sans-serif;
+    text-align: start;
+  }
+  
+  /* Ícone de + ou - */
+  .icon {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2CBEFF;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Conteúdo interno */
+  .content {
+    padding: 25px 30px;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-family: 'SF UI Text', sans-serif;
+    color: #4d4d4d;
+  }
+
+  /* Variantes de cores para header */
+.blue .header {
+  background-color: #75D4FF;
+}
+
+.green .header {
+  background-color: #74F578; 
+}
+
+.yellow .header {
+  background-color: #FFEB55; 
+}
+
+.orange .header {
+  background-color: #FF9C45; 
+}
+
+.red .header {
+  background-color: #FF513A; 
+}
+
+/* Variantes de cores para title, icon, fundo content e fundo item */
+.blue .title,
+.green .title,
+.yellow .title,
+.orange .title,
+.red .title {
+  color: #3D3D3D;
+}
+
+.blue .icon,
+.green .icon,
+.yellow .icon,
+.orange .icon,
+.red .icon {
+  color: #3D3D3D;
+}
+
+/* Fundo do content de blue e item*/
+
+.blue .content{
+  background-color: #95DEFF;
+  color: #3D3D3D;
+}
+
+.item.blue {
+  background-color: #95DEFF;
+}
+
+/* Fundo do content de green e item*/
+
+.green .content{
+  background-color: #95F598;
+  color: #3D3D3D;
+}
+
+.item.green {
+  background-color: #95F598;
+}
+
+/* Fundo do content do yellow e item*/
+
+.yellow .content{
+  background-color: #FFEF78;
+  color: #3D3D3D;
+}
+
+.item.yellow {
+  background-color: #FFEF78;
+}
+
+/* Fundo do content do orange e item*/
+
+.orange .content{
+  background-color: #FFAD65;
+  color: #3D3D3D;
+}
+
+.item.orange {
+  background-color: #FFAD65;
+}
+
+/* Fundo do content do red e item*/
+
+.red .content{
+  background-color: #FF8878;
+  color: #3D3D3D;
+}
+
+.item.red {
+  background-color: #FF8878;
+}
+
+  
+  @media (max-width: 1030px) {
+    /* Botão de título */
+    .header {
+      width: 100%;
+      padding: 20px 40px;
+      background-color: #F6F6F6;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    /* Texto do título */
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2CBEFF;
+    }
+    
+    /* Ícone de + ou - */
+    .icon {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #2CBEFF;
+      transition: transform 0.2s ease;
+    }
+    
+    /* Conteúdo interno */
+    .content {
+      padding: 18px 30px;
+      background-color: #fff;
+      font-size: 16px;
+      line-height: 1.5rem;
+      font-family: 'SF UI Text', sans-serif;
+      color: #4d4d4d;
+    }
+
+  }  
+
+  @media (max-width: 480px) {
+    .item {
+      border-radius: 25px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+    
+    /* Botão de título */
+    .header {
+      width: 100%;
+      padding: 15px 20px;
+      background-color: #F6F6F6;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* Texto do título */
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2CBEFF;
+    }
+    
+    /* Ícone de + ou - */
+    .icon {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #2CBEFF;
+      transition: transform 0.2s ease;
+    }
+    
+    /* Conteúdo interno */
+    .content {
+      padding: 25px 20px;
+      background-color: #fff;
+      font-size: 16px;
+      line-height: 1.5rem;
+      font-family: 'SF UI Text', sans-serif;
+      color: #4d4d4d;
+    }
+}
+    
