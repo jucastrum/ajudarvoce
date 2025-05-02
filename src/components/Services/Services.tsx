@@ -2,7 +2,7 @@
 
 import Accordion from '@/components/Accordion/Accordion'
 import { AccordionItem } from '@/components/Accordion/AccordionItem'
-import styles from './services.module.css'
+import styles from './Services.module.css'
 
 export default function ServicesAccordion() {
   return (
