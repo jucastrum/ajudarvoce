@@ -181,6 +181,97 @@
     }
   }
   
+
+  @media (max-width: 685px) {
+    .container {
+      position: relative;
+      width: 100%;
+      min-height: 600px;
+      background-color: #ffffff;
+      overflow: hidden;
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20rem;
+    }
+  
+  
+    .abstractLines {
+      position: absolute;
+      top: 100px;
+      left: 0px;
+      z-index: 0;
+      width: 150px; /* menor */
+    }
+  
+    .mainImage {
+      position: absolute;
+      top: 56px;
+      left: 20px;
+      border-radius: 30px;
+      z-index: 1;
+      width: 250px;
+      height: 380px;
+    }
+  
+    .inlineImagesWrapper {
+      display: flex;
+      gap: 20px;
+      position: absolute;
+      top: 140px;
+      left: 300px;
+      z-index: 1;
+    }
+  
+    .inlineImage {
+      border-radius: 25px;
+      width: 220px; /* menor */
+    }
+  
+    .titleWrapper {
+      position: absolute;
+      top: 80px;
+      left: 300px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 2;
+    }
+  
+    .logoAndQuestion {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .titleText {
+      font-family: 'SF Pro Text', sans-serif;
+      font-size: 25px; /* menor */
+      font-weight: 600;
+      color: #454545;
+      line-height: 42px; /* menor */
+    }
+  
+    .logoHorizontal {
+      width: 100%;
+      max-width: 220px; /* menor */
+      height: auto;
+    }
+  
+    .description {
+      position: absolute;
+      top: 310px;
+      left: 300px;
+      width: 360px;
+      color: #4d4d4d;
+      font-size: 1rem; 
+      font-family: 'SF UI Text', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      z-index: 2;
+    }
+  }
+
   
   @media (max-width: 480px) {
     .container {

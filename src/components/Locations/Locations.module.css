@@ -466,11 +466,12 @@
 
   .searchInputWrapper {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
   }
   .searchBanner{
     margin-bottom: 1.5rem;
   }
+
   .bannerLocations {
     padding: 3rem 2rem;
   }
