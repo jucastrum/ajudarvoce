@@ -564,7 +564,7 @@
 
 @media (max-width: 480px) { 
   .container {
-    padding: 2rem 25px;
+    padding: 2rem 20px;
   }
 
   .titleArea {
@@ -573,13 +573,13 @@
   }
 
   .Title {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: #2CBEFF;
   }
   
   .Subtitle {
-    font-size: 14px;
+    font-size: 13px;
     color: #4d4d4d;
   }
 
@@ -631,12 +631,12 @@
   .locationTitle {
     color: #2CBEFF;
     text-align: start;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   /* Subtítulo */
   .locationSubtitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #2CBEFF;
     text-align: start;
   }
@@ -648,15 +648,8 @@
 
   .imageContainer {
     grid-area: imageContainer;
-    width: 355px;
-    height: 280px;
-    border-radius: 15px;
-    border: 2px solid #C5ECFF;
-    object-fit: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
+    width: 300px;
+    height: 220px;
   }
 
   .imageContainer img {
@@ -684,7 +677,7 @@
   }  
 
   .buttonsArea {
-    gap: 0.8rem;
+    gap: 1rem;
   }
 
   .phoneButton,
@@ -708,9 +701,9 @@
   }
 }
 
-@media (max-width: 415px) { 
+@media (max-width: 380px) { 
   .container {
-    padding: 1.5rem 25px;
+    padding: 1.5rem 20px;
   }
 
   .searchInput{
@@ -722,16 +715,133 @@
   }
 
   .bannerLocations{
-    padding: 2.5rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .locationCard {
     padding: 1rem 0;
   }
 
+  .locationDescription {
+    margin-top: auto;
+    font-size: 15px;
+  }
+
   .imageContainer {
     grid-area: imageContainer;
-    width: 325px;
-    height: 260px;
+    width: 300px;
+    height: 220px;
   }
+
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .buttonsArea {
+    gap: 0.8rem;
+  }
+
+  .phoneButton,
+  .whatsappButton,
+  .mapButton,
+  .mapButtonClosed {
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  .buttonIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+
+}
+
+@media (max-width: 325px) { 
+  .container {
+    padding: 1.5rem 20px;
+  }
+
+  .Title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2CBEFF;
+  }
+  
+  .Subtitle {
+    font-size: 14px;
+    color: #4d4d4d;
+  }
+
+  .searchInput{
+    font-size: 15px;
+  }
+
+  .searchIconWrapper{
+    padding: 10px 12px;
+  }
+
+  .bannerLocations{
+    padding: 1.5rem 0.8rem;
+  }
+
+  .locationCard {
+    padding: 1rem 0;
+  }
+
+  .locationDescription {
+    margin-top: auto;
+    font-size: 13px;
+  }
+
+
+  .imageContainer {
+    grid-area: imageContainer;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .buttonsArea {
+    gap: 0.5rem;
+  }
+
+  .phoneButton,
+  .whatsappButton,
+  .mapButton,
+  .mapButtonClosed {
+    color: white;
+    border: none;
+    padding: 10px 9px;
+    border-radius: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .buttonIcon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+
+
 }

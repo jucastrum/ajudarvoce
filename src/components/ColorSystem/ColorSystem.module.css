@@ -28,7 +28,7 @@
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 25px;
+    padding: 0 20px;
     border-radius: 35px;
     gap: 15px;
   }
