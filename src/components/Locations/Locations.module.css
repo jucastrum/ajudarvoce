@@ -649,7 +649,7 @@
 
   .imageContainer {
     grid-area: imageContainer;
-    width: 320px;
+    width: 360px;
     height: 220px;
   }
 
@@ -692,12 +692,12 @@
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .buttonIcon {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     margin-right: 5px;
   }
 }
