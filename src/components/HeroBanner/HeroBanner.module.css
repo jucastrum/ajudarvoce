@@ -128,10 +128,10 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 780px) {
   .heroWrapper {
-    min-height: 820px;
-    padding: 2rem 30px;
+    min-height: 750px;
+    padding: 2rem 4rem;
     margin-top: 15rem; 
   }
 
