@@ -136,7 +136,7 @@ const Locations: React.FC = () => {
             <div className={styles.searchIconWrapper}>
               <img
                 src="/assets/LupaPesquisa.svg"
-                alt="Lupa Pesquisa"
+                alt="Lupa de Pesquisa"
               />
             </div>
           </div>
@@ -178,7 +178,7 @@ const Locations: React.FC = () => {
 
                 <div className={styles.buttonsArea}>
                   <a href={`tel:${location.phone}`} className={styles.phoneButton}>
-                    <img src="/assets/Telefone.svg" alt="Telefone" className={styles.buttonIcon} />
+                    <img src="/assets/Telefone.svg" alt="Ícone de Telefone" className={styles.buttonIcon} />
                     Telefone
                   </a>
                   <a
@@ -187,7 +187,7 @@ const Locations: React.FC = () => {
                     rel="noopener noreferrer"
                     className={styles.whatsappButton}
                   >
-                    <img src="/assets/Whatsapp.svg" alt="WhatsApp" className={styles.buttonIcon} />
+                    <img src="/assets/Whatsapp.svg" alt="Ícone do WhatsApp" className={styles.buttonIcon} />
                     WhatsApp
                   </a>
 
@@ -197,7 +197,7 @@ const Locations: React.FC = () => {
                   >
                     <img
                       src={openMapId === location.id ? "/assets/Closed.svg" : "/assets/MapIcon.svg"}
-                      alt="Mapa"
+                      alt="Ícone Mapa"
                       className={styles.buttonIcon}
                     />
                     {openMapId === location.id ? 'Fechar mapa' : 'Ver no mapa'}

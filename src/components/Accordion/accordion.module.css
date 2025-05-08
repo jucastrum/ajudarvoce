@@ -28,7 +28,7 @@
   .title {
     font-size: 20px;
     font-weight: 600;
-    color: #2CBEFF;
+    color: #00578A;
     font-family: 'SF Pro Text', sans-serif;
     text-align: start;
   }
@@ -37,7 +37,7 @@
   .icon {
     font-size: 1.5rem;
     font-weight: 900;
-    color: #2CBEFF;
+    color: #00578A;
     transition: transform 0.2s ease;
   }
   
