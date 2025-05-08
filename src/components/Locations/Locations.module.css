@@ -702,7 +702,7 @@
   }
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 426px) { 
   .container {
     padding: 1.5rem 20px;
   }
@@ -730,7 +730,7 @@
   }
 
   .searchIconWrapper{
-    padding: 10px 12px;
+    padding: 11px 12px;
   }
 
   .bannerLocations{
@@ -772,7 +772,7 @@
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .buttonIcon {
@@ -823,7 +823,7 @@
 
   .imageContainer {
     grid-area: imageContainer;
-    width: 300px;
+    width: 303px;
     height: 200px;
   }
   
