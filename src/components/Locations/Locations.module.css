@@ -702,9 +702,27 @@
   }
 }
 
-@media (max-width: 380px) { 
+@media (max-width: 420px) { 
   .container {
     padding: 1.5rem 20px;
+  }
+
+  .bannerLocations {
+    padding: 1.5rem 1rem;
+  }
+
+  .locationCard {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "imageContainer"
+      "infoContainer"
+      "mapContainer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    border-radius: 20px;
   }
 
   .searchInput{
@@ -719,9 +737,6 @@
     padding: 1.5rem 1rem;
   }
 
-  .locationCard {
-    padding: 1rem 0;
-  }
 
   .locationDescription {
     margin-top: auto;
@@ -730,7 +745,7 @@
 
   .imageContainer {
     grid-area: imageContainer;
-    width: 300px;
+    width: 320px;
     height: 220px;
   }
 
@@ -757,7 +772,7 @@
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .buttonIcon {
@@ -768,7 +783,7 @@
 
 }
 
-@media (max-width: 325px) { 
+@media (max-width: 395px) { 
   .container {
     padding: 1.5rem 20px;
   }
@@ -793,7 +808,7 @@
   }
 
   .bannerLocations{
-    padding: 1.5rem 0.7rem;
+    padding: 1.5rem 1rem;
   }
 
   .locationCard {
@@ -802,13 +817,13 @@
 
   .locationDescription {
     margin-top: auto;
-    font-size: 13px;
+    font-size: 15px;
   }
 
 
   .imageContainer {
     grid-area: imageContainer;
-    width: 250px;
+    width: 300px;
     height: 200px;
   }
   
@@ -830,12 +845,12 @@
   .mapButtonClosed {
     color: white;
     border: none;
-    padding: 10px 9px;
+    padding: 10px 12px;
     border-radius: 12px;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .buttonIcon {
@@ -843,6 +858,5 @@
     height: 11px;
     margin-right: 5px;
   }
-
 
 }
