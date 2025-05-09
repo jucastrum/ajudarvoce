@@ -93,6 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   
   .searchIconWrapper img {
@@ -167,7 +168,7 @@
   
   /* Título */
   .locationTitle {
-    color: #2CBEFF;
+    color: #00578A;
     text-align: start;
     font-size: 28px;
   }
@@ -175,7 +176,7 @@
   /* Subtítulo */
   .locationSubtitle {
     font-size: 28px;
-    color: #2CBEFF;
+    color: #00578A;
     text-align: start;
   }
 
