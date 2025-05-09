@@ -8,7 +8,7 @@
   padding: 2rem 1rem;
   background: white;
   overflow: visible;
-  margin-top: 20rem; 
+  margin-top: 10rem; 
   margin-bottom: 30rem;
 }
 
@@ -142,7 +142,7 @@
   .heroWrapper {
     min-height: 420px;
     padding: 2rem 1rem;
-    margin-top: 15rem; 
+    margin-top: 10rem; 
   }
 
   .maoEsquerda {
