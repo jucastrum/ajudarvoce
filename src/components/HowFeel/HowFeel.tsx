@@ -5,24 +5,25 @@ const HowFeel = () => {
   return (
     <div id="comovocestasesentindo" className={styles.container}>
       <div className={styles.wrapper}>
+          <div className={styles.titulo}>
+            <h2>Como você está se sentindo?</h2>
+          </div>
 
-        <div className={styles.leftContent}>
-          <h2 className={styles.title}>Como você está se sentindo?</h2>
-          <p className={styles.description}>
-            O sistema de cores abaixo pode te ajudar a entender qual tipo de ajuda você precisa agora. 
-            Tente identificar qual se parece mais com o que você tem sentido e conheça o serviço indicado.
-          </p>
-          <p className={styles.reference}>
-            Esse sistema de categorias foi desenvolvido com base no Protocolo de Manchester e principalmente 
-            o Protocolo de Classificação de Risco em Saúde Mental, criado pela Secretaria de Estado da Saúde do Espírito Santo em 2018.
-          </p>
-        </div>
+          <div className={styles.description}>
+            <p>
+              O sistema de cores abaixo pode te ajudar a entender qual tipo de ajuda você precisa agora. 
+              Tente identificar qual se parece mais com o que você tem sentido e conheça o serviço indicado.
+            </p>
+          </div>
 
-        <div className={styles.middleContent}>
-          {/* Espaço*/}
-        </div>
-
-        <div className={styles.rightContent}>
+          <div className={styles.reference}>
+            <p>
+              Esse sistema de categorias foi desenvolvido com base no Protocolo de Manchester e principalmente 
+              o Protocolo de Classificação de Risco em Saúde Mental, criado pela Secretaria de Estado da Saúde do Espírito Santo em 2018.
+            </p>
+          </div>
+          
+        <div className={styles.imageContent}>
           <Image
             src="/assets/Linhasabstratas3.svg"
             alt="Linhas Abstratas"
