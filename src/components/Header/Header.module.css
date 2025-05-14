@@ -79,8 +79,7 @@
   }
 
   .tituloWrapper {
-    top: 480px;
-    left: 50%;
+    top: 500px;
     transform: translateX(-50%);
     width: 90%;
     text-align: center;

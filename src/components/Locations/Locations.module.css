@@ -577,7 +577,6 @@
   .Title {
     font-size: 20px;
     font-weight: bold;
-    color: #2CBEFF;
   }
   
   .Subtitle {
@@ -631,7 +630,6 @@
   }
   /* Título */
   .locationTitle {
-    color: #2CBEFF;
     text-align: start;
     font-size: 20px;
   }
@@ -639,7 +637,6 @@
   /* Subtítulo */
   .locationSubtitle {
     font-size: 20px;
-    color: #2CBEFF;
     text-align: start;
   }
   
@@ -792,7 +789,6 @@
   .Title {
     font-size: 20px;
     font-weight: bold;
-    color: #2CBEFF;
   }
   
   .Subtitle {
